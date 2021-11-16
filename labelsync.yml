@@ -24,7 +24,7 @@ labels: &common
   "Type: Enhancement":
     color: 00cccc
     description: New feature or request
-    alias: ["enhancement", "type:enhancement"]
+    alias: ["enhancement", "type:enhancement", "codetree-epic"]
   "Type: Bug":
     color: ff0000
     description: Something isn't working
@@ -121,11 +121,6 @@ labels: &common
 # Repositories
 repos:
   protocol-monorepo:
-    config:
-      removeUnconfiguredLabels: false
-    labels:
-      <<: *common
-  solvency-agent:
     config:
       removeUnconfiguredLabels: false
     labels:

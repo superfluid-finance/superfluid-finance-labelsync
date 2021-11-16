@@ -28,7 +28,11 @@ labels: &common
   "Type: Bug":
     color: ff0000
     description: Something isn't working
-    alias: ["bug", "type:bug", "type:visualbug"]
+    alias: ["bug", "type:bug"]
+  "Type: VisualBug":
+    color: ff0000
+    description: Something doesn't look right
+    alias: ["type:visualbug"]
   "Severity: Low":
     color: ccffff
     siblings: ["Type: Bug"]

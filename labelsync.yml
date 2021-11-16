@@ -48,7 +48,7 @@ labels: &common
   "Type: Documentation":
     color: 0000ff
     description: Improvements or additions to documentation
-    alias: ["type:documentation"]
+    alias: ["documentation", "type:documentation"]
   "Type: Spike":
     color: 7f00ff
     description: Task that is to be timeboxed
@@ -60,7 +60,7 @@ labels: &common
   "Type: Security":
     color: ffff00
     description: Security related system improvements
-    alias: ["type:security"]
+    alias: ["security", "type:security"]
   "Type: InfoSec":
     color: ff8000
     description: Tasks related to the security in the processes

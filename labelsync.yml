@@ -50,9 +50,7 @@ repos:
     config:
       removeUnconfiguredLabels: false
     labels:
-      {}
-      # <<: *common
-      # Add labels here.
+      <<: *common
   checkout:
     config:
       removeUnconfiguredLabels: false
@@ -92,7 +90,9 @@ repos:
     config:
       removeUnconfiguredLabels: false
     labels:
-      <<: *common
+      {}
+      # <<: *common
+      # Add labels here.
   ui-react-components:
     config:
       removeUnconfiguredLabels: false

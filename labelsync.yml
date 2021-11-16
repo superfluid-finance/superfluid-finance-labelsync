@@ -47,24 +47,31 @@ labels: &common
   "Type: Spike":
     color: 7f00ff
     description: Task that is to be timeboxed
+    alias: ["type:spike"]
   "Type: Testing":
     color: 80ff00
     description: Testing cases or harness improvements
+    alias: ["type:testing"]
   "Type: Security":
     color: ffff00
     description: Security related system improvements
+    alias: ["type:security"]
   "Type: InfoSec":
     color: ff8000
     description: Tasks related to the security in the processes
+    alias: ["type:InfoSec"]
   "Type: DevOps":
     color: 00ffff
     description: Improvements to the processes part of DevOps
+    alias: ["type:devops"]
   "Type: Design":
     color: 9999ff
     description: Design related improvements
+    alias: ["type:design"]
   "Type: Admin":
     color: 994c00
     description: Administrative related tasks
+    alias: ["type:admin"]
   "Resolution: Duplicate":
     color: cfd3d7
     description: This issue or pull request already exists
@@ -83,18 +90,23 @@ labels: &common
   "Tag: Hotfix":
     color: ff6666
     description: The solution should be included in a hotfix
+    alias: ["hotfix"]
   "Tag: Idea":
     color: ff07ff
     description: Raw idea, thoughts and brainstorming notes
+    alias: ["idea stage"]
   "Tag: Quality":
     color: d4c5f9
     description: Related to the quality topic
+    alias: ["quality"]
   "Tag: TechDebt":
     color: fef2c0
     description: Technical debt that needs to be addressed
+    alias: ["tech debt"]
   "Tag: UX":
     color: 97efd0
     description: Related to the user experience topic
+    alias: ["ux"]
 
 # Repositories
 repos:

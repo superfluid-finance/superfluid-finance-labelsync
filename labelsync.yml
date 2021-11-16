@@ -32,18 +32,23 @@ labels: &common
   "Severity: Low":
     color: ccffff
     siblings: ["Type: Bug"]
+    alias: ["severity:low"]
   "Severity: Medium":
     color: ffcc99
     siblings: ["Type: Bug"]
+    alias: ["severity:medium"]
   "Severity: High":
     color: ff8000
     siblings: ["Type: Bug"]
+    alias: ["severity:high"]
   "Severity: Critical":
     color: cc0000
     siblings: ["Type: Bug"]
+    alias: ["impediment"]
   "Type: Documentation":
     color: 0000ff
     description: Improvements or additions to documentation
+    alias: ["type:documentation"]
   "Type: Spike":
     color: 7f00ff
     description: Task that is to be timeboxed
@@ -75,18 +80,19 @@ labels: &common
   "Resolution: Duplicate":
     color: cfd3d7
     description: This issue or pull request already exists
-    alias: ["duplicate"]
+    alias: ["duplicate", "res:duplicate"]
   "Resolution: Invalid":
     color: e0e0e0
     description: This doesn't seem right
-    alias: ["invalid"]
+    alias: ["invalid", "res:invalid"]
   "Resolution: Wontfix":
     color: e0e0e0
     description: This will not be worked on
-    alias: ["wontfix"]
+    alias: ["wontfix", "res:wontfix"]
   "Tag: Bounty":
     color: d4af37
     description: Things that has a bounty on them
+    alias: ["bounty"]
   "Tag: Hotfix":
     color: ff6666
     description: The solution should be included in a hotfix

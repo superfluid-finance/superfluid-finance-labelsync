@@ -1,14 +1,14 @@
-# Colors
-colors:
-  area: &area "#FFD700"
-  kind: &kind "#3B5BDB"
-  status: &status "#F8F9FA"
-  bug: &bug "#EE0000"
-  priority: &priority "#F783AC"
-  scope: &scope "#27CF79"
-  team: &team'#FDF4E8'
-  release: &release "#A5D8ff"
-  process: &process "#EB9100"
+# # Colors
+# colors:
+#   area: &area "#FFD700"
+#   kind: &kind "#3B5BDB"
+#   status: &status "#F8F9FA"
+#   bug: &bug "#EE0000"
+#   priority: &priority "#F783AC"
+#   scope: &scope "#27CF79"
+#   team: &team'#FDF4E8'
+#   release: &release "#A5D8ff"
+#   process: &process "#EB9100"
 
 # There's one YAML feature that you *absolutely* want to use in your config.
 #
@@ -21,337 +21,212 @@ colors:
 
 # Labels
 labels: &common
-  "bug/0-needs-info":
-    color: *bug
-    description: More information is needed for reproduction.
-    siblings: ["kind/bug"]
-  "bug/1-repro-available":
-    color: *bug
-    description: A reproduction exists and needs to be confirmed.
-    siblings: ["kind/bug"]
-  "bug/2-confirmed":
-    color: *bug
-    description: We have confirmed that this is a bug.
-    siblings: ["kind/bug"]
-  "kind/bug":
-    color: *bug
-    description: A reported bug.
-    alias: ["bug"]
-  "kind/regression":
-    color: *kind
-    description: A reported bug in functionality that used to work before.
-  "kind/feature":
-    color: *kind
-    description: A request for a new feature.
-    alias: ["enhancement"]
-  "kind/improvement":
-    color: *kind
-    description: An improvement to existing feature and code.
-  "kind/docs":
-    color: *kind
-    description: A documentation change is required.
-    alias: ["documentation"]
-  "kind/discussion":
-    color: *kind
-    description: Discussion is required.
-  "kind/question":
-    color: *kind
-    description: Developer asked a question. No code changes required.
-    alias: ["question"]
+  "Type: Enhancement":
+    color: 00cccc
+    description: New feature or request
+    alias: ["enhancement", "type:enhancement"]
+  "Type: Bug":
+    color: ff0000
+    description: Something isn't working
+    alias: ["bug", "type:bug"]
+  "Type: VisualBug":
+    color: ffcccc
+    description: Something doesn't look right
+    alias: ["type:visualbug"]
+  "Severity: Low":
+    color: ccffff
+    siblings: ["Type: Bug"]
+    alias: ["severity:low"]
+  "Severity: Medium":
+    color: ffcc99
+    siblings: ["Type: Bug"]
+    alias: ["severity:medium"]
+  "Severity: High":
+    color: ff8000
+    siblings: ["Type: Bug"]
+    alias: ["severity:high"]
+  "Severity: Critical":
+    color: cc0000
+    siblings: ["Type: Bug"]
+    alias: ["impediment"]
+  "Type: Documentation":
+    color: 0000ff
+    description: Improvements or additions to documentation
+    alias: ["documentation", "type:documentation"]
+  "Type: Spike":
+    color: 7f00ff
+    description: Task that is to be timeboxed
+    alias: ["type:spike"]
+  "Type: Testing":
+    color: 80ff00
+    description: Testing cases or harness improvements
+    alias: ["type:testing"]
+  "Type: Security":
+    color: ffff00
+    description: Security related system improvements
+    alias: ["security", "type:security"]
+  "Type: InfoSec":
+    color: ff8000
+    description: Tasks related to the security in the processes
+    alias: ["type:InfoSec"]
+  "Type: DevOps":
+    color: 00ffff
+    description: Improvements to the processes part of DevOps
+    alias: ["type:devops"]
+  "Type: Design":
+    color: 9999ff
+    description: Design related improvements
+    alias: ["type:design"]
+  "Type: Admin":
+    color: 994c00
+    description: Administrative related tasks
+    alias: ["type:admin"]
+  "Resolution: Duplicate":
+    color: cfd3d7
+    description: This issue or pull request already exists
+    alias: ["duplicate", "res:duplicate"]
+  "Resolution: Invalid":
+    color: e0e0e0
+    description: This doesn't seem right
+    alias: ["invalid", "res:invalid"]
+  "Resolution: Wontfix":
+    color: e0e0e0
+    description: This will not be worked on
+    alias: ["wontfix", "res:wontfix"]
+  "Tag: Bounty":
+    color: d4af37
+    description: Things that has a bounty on them
+    alias: ["bounty"]
+  "Tag: Hotfix":
+    color: ff6666
+    description: The solution should be included in a hotfix
+    alias: ["hotfix"]
+  "Tag: Idea":
+    color: ff07ff
+    description: Raw idea, thoughts and brainstorming notes
+    alias: ["idea stage"]
+  "Tag: Quality":
+    color: d4c5f9
+    description: Related to the quality topic
+    alias: ["quality"]
+  "Tag: TechDebt":
+    color: fef2c0
+    description: Technical debt that needs to be addressed
+    alias: ["tech debt"]
+  "Tag: UX":
+    color: 97efd0
+    description: Related to the user experience topic
+    alias: ["ux"]
 
 # Repositories
 repos:
-  mercury-demo-a:
-    config:
-      removeUnconfiguredLabels: false
-    labels:
-      {}
-      # <<: *common
-      # Add labels here.
-  site.superfluid.finance-legacy:
-    config:
-      removeUnconfiguredLabels: false
-    labels:
-      {}
-      # <<: *common
-      # Add labels here.
-  protocol-monorepo:
-    config:
-      removeUnconfiguredLabels: false
-    labels:
-      {}
-      # <<: *common
-      # Add labels here.
-  checkout:
-    config:
-      removeUnconfiguredLabels: false
-    labels:
-      {}
-      # <<: *common
-      # Add labels here.
-  solvency-agent:
-    config:
-      removeUnconfiguredLabels: false
-    labels:
-      {}
-      # <<: *common
-      # Add labels here.
-  platform:
-    config:
-      removeUnconfiguredLabels: false
-    labels:
-      {}
-      # <<: *common
-      # Add labels here.
-  solvency-agent-golang:
-    config:
-      removeUnconfiguredLabels: false
-    labels:
-      {}
-      # <<: *common
-      # Add labels here.
-  testnet-orchestrator:
-    config:
-      removeUnconfiguredLabels: false
-    labels:
-      {}
-      # <<: *common
-      # Add labels here.
-  protocol-monitor:
-    config:
-      removeUnconfiguredLabels: false
-    labels:
-      {}
-      # <<: *common
-      # Add labels here.
-  ui-react-components:
-    config:
-      removeUnconfiguredLabels: false
-    labels:
-      {}
-      # <<: *common
-      # Add labels here.
-  user-dashboard:
-    config:
-      removeUnconfiguredLabels: false
-    labels:
-      {}
-      # <<: *common
-      # Add labels here.
-  checkout-sdk:
-    config:
-      removeUnconfiguredLabels: false
-    labels:
-      {}
-      # <<: *common
-      # Add labels here.
-  eth-nodes:
-    config:
-      removeUnconfiguredLabels: false
-    labels:
-      {}
-      # <<: *common
-      # Add labels here.
-  protocol-analytics-service:
-    config:
-      removeUnconfiguredLabels: false
-    labels:
-      {}
-      # <<: *common
-      # Add labels here.
-  payment-monitoring-service:
-    config:
-      removeUnconfiguredLabels: false
-    labels:
-      {}
-      # <<: *common
-      # Add labels here.
-  site-www.superfluid.finance:
-    config:
-      removeUnconfiguredLabels: false
-    labels:
-      {}
-      # <<: *common
-      # Add labels here.
-  docs:
-    config:
-      removeUnconfiguredLabels: false
-    labels:
-      {}
-      # <<: *common
-      # Add labels here.
-  superfluid-protocol-preview:
-    config:
-      removeUnconfiguredLabels: false
-    labels:
-      {}
-      # <<: *common
-      # Add labels here.
-  web3-infra:
-    config:
-      removeUnconfiguredLabels: false
-    labels:
-      {}
-      # <<: *common
-      # Add labels here.
-  web3-nodes-manager:
-    config:
-      removeUnconfiguredLabels: false
-    labels:
-      {}
-      # <<: *common
-      # Add labels here.
-  3d-network:
-    config:
-      removeUnconfiguredLabels: false
-    labels:
-      {}
-      # <<: *common
-      # Add labels here.
-  agent-controller:
-    config:
-      removeUnconfiguredLabels: false
-    labels:
-      {}
-      # <<: *common
-      # Add labels here.
   superfluid-stories:
     config:
       removeUnconfiguredLabels: false
     labels:
-      {}
-      # <<: *common
-      # Add labels here.
+      <<: *common
+  protocol-monorepo:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+  platform:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+  ui-react-components:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+  user-dashboard:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+  protocol-analytics-service:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+  site-www.superfluid.finance:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+  docs:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+  web3-infra:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
+  web3-nodes-manager:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
   superfluid-infrastructure:
     config:
       removeUnconfiguredLabels: false
     labels:
-      {}
-      # <<: *common
-      # Add labels here.
-  solvency-twin-agent:
-    config:
-      removeUnconfiguredLabels: false
-    labels:
-      {}
-      # <<: *common
-      # Add labels here.
+      <<: *common
   fund-me-on-testnet:
     config:
       removeUnconfiguredLabels: false
     labels:
-      {}
-      # <<: *common
-      # Add labels here.
-  streams-details-app:
-    config:
-      removeUnconfiguredLabels: false
-    labels:
-      {}
-      # <<: *common
-      # Add labels here.
-  SuperAuction:
-    config:
-      removeUnconfiguredLabels: false
-    labels:
-      {}
-      # <<: *common
-      # Add labels here.
+      <<: *common
   site-portal.dev.superfluid.dev:
     config:
       removeUnconfiguredLabels: false
     labels:
-      {}
-      # <<: *common
-      # Add labels here.
-  auction-email-service:
-    config:
-      removeUnconfiguredLabels: false
-    labels:
-      {}
-      # <<: *common
-      # Add labels here.
+      <<: *common
   build-scripts:
     config:
       removeUnconfiguredLabels: false
     labels:
-      {}
-      # <<: *common
-      # Add labels here.
+      <<: *common
   assets:
     config:
       removeUnconfiguredLabels: false
     labels:
-      {}
-      # <<: *common
-      # Add labels here.
-  bor:
-    config:
-      removeUnconfiguredLabels: false
-    labels:
-      {}
-      # <<: *common
-      # Add labels here.
+      <<: *common
   superfluid-sentinel:
     config:
       removeUnconfiguredLabels: false
     labels:
-      {}
-      # <<: *common
-      # Add labels here.
-  interactive-demo:
-    config:
-      removeUnconfiguredLabels: false
-    labels:
-      {}
-      # <<: *common
-      # Add labels here.
+      <<: *common
   metastructure:
     config:
       removeUnconfiguredLabels: false
     labels:
-      {}
-      # <<: *common
-      # Add labels here.
+      <<: *common
   superfluid-console:
     config:
       removeUnconfiguredLabels: false
     labels:
-      {}
-      # <<: *common
-      # Add labels here.
+      <<: *common
   user-dashboard-v2:
     config:
       removeUnconfiguredLabels: false
     labels:
-      {}
-      # <<: *common
-      # Add labels here.
+      <<: *common
   solvency-helpers:
     config:
       removeUnconfiguredLabels: false
     labels:
-      {}
-      # <<: *common
-      # Add labels here.
-  dao-global-bounties:
-    config:
-      removeUnconfiguredLabels: false
-    labels:
-      {}
-      # <<: *common
-      # Add labels here.
+      <<: *common
   toga-suit:
     config:
       removeUnconfiguredLabels: false
     labels:
-      {}
-      # <<: *common
-      # Add labels here.
+      <<: *common
   superfluid-accounting-items:
     config:
       removeUnconfiguredLabels: false
     labels:
-      {}
-      # <<: *common
-      # Add labels here.
+      <<: *common

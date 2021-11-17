@@ -24,7 +24,7 @@ labels: &common
   "Type: Enhancement":
     color: 00cccc
     description: New feature or request
-    alias: ["enhancement", "type:enhancement", "codetree-epic"]
+    alias: ["enhancement", "type:enhancement"]
   "Type: Bug":
     color: ff0000
     description: Something isn't working
@@ -120,6 +120,11 @@ labels: &common
 
 # Repositories
 repos:
+  superfluid-stories:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common
   protocol-monorepo:
     config:
       removeUnconfiguredLabels: false
@@ -161,11 +166,6 @@ repos:
     labels:
       <<: *common
   web3-nodes-manager:
-    config:
-      removeUnconfiguredLabels: false
-    labels:
-      <<: *common
-  superfluid-stories:
     config:
       removeUnconfiguredLabels: false
     labels:

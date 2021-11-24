@@ -49,6 +49,15 @@ labels: &common
     color: cc0000
     siblings: ["Type: Bug"]
     alias: ["impediment"]
+  "Size: S":
+    color: ccffff
+    siblings: ["Type: Enhancement"]
+  "Size: M":
+    color: ffcc99
+    siblings: ["Type: Enhancement"]
+  "Size: L":
+    color: ff8000
+    siblings: ["Type: Enhancement"]
   "Type: Documentation":
     color: 0000ff
     description: Improvements or additions to documentation

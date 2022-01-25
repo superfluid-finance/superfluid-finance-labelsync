@@ -158,9 +158,9 @@ labels: &projects
   "Project: SENTINEL":
     color: F5F5F5
     description: Superfluid sentinel software
-  "Project: SENTINEL":
+  "Project: SOLVENCY":
     color: F5F5F5
-    description: Superfluid sentinel software
+    description: Superfluid solvency suite
   "Project: METASTRUCTURE":
     color: F5F5F5
     description: A IaC framework to build vendor-independent repeatable infrastructure.

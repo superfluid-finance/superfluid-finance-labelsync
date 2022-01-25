@@ -281,3 +281,8 @@ repos:
       removeUnconfiguredLabels: false
     labels:
       <<: *common
+  fund-me-on-testnet:
+    config:
+      removeUnconfiguredLabels: false
+    labels:
+      <<: *common

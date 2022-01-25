@@ -164,6 +164,9 @@ project_labels: &projects
   "Project: METASTRUCTURE":
     color: F5F5F5
     description: A IaC framework to build vendor-independent repeatable infrastructure.
+  "Project: INFRA":
+    color: F5F5F5
+    description: Superfluid infrastrure.
   "Project: DEV-PROC":
     color: F5F5F5
     description: Superfluid development processes related to DevSecOps, Quality and InfoSec.

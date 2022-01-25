@@ -20,7 +20,7 @@
 # https://medium.com/@kinghuang/docker-compose-anchors-aliases-extensions-a1e4105d70bd.
 
 # Labels
-labels: &common
+common_labels: &common
   "Type: Enhancement":
     color: 00cccc
     description: New feature or request
@@ -127,6 +127,47 @@ labels: &common
     description: Related to the user experience topic
     alias: ["ux"]
 
+project_labels: &projects
+  "Project: USER-v1":
+    color: F5F5F5
+    description: User dashboard v1
+  "Project: USER-v2":
+    color: F5F5F5
+    description: User dashboard v2
+  "Project: PLATFORM":
+    color: F5F5F5
+    description: Superfluid platform service, providing web2 experience to the users
+  "Project: PROTOCOL":
+    color: F5F5F5
+    description: Superfluid protocol, including Ethereum contracts (in Solidity) and POCs in other chain types
+  "Project: JS-SDK":
+    color: F5F5F5
+    description: Superfluid protocol simple javascript SDK
+  "Project: SUBGRAPH":
+    color: F5F5F5
+    description: Superfluid protocol subgraph
+  "Project: SDK-CORE":
+    color: F5F5F5
+    description: Superfluid protocol SDK core module
+  "Project: SDK-REDUX":
+    color: F5F5F5
+    description: Superfluid protocol SDK core module
+  "Project: SENTINEL":
+    color: F5F5F5
+    description: Superfluid sentinel software
+  "Project: SOLVENCY":
+    color: F5F5F5
+    description: Superfluid solvency suite
+  "Project: METASTRUCTURE":
+    color: F5F5F5
+    description: A IaC framework to build vendor-independent repeatable infrastructure.
+  "Project: DEV-PROC":
+    color: F5F5F5
+    description: Superfluid development processes related to DevSecOps, Quality and InfoSec.
+  "Project: WILD":
+    color: F5F5F5
+    description: Other weird stuff we are building in Superfluid
+
 # Repositories
 repos:
   superfluid-stories:
@@ -134,6 +175,7 @@ repos:
       removeUnconfiguredLabels: false
     labels:
       <<: *common
+      <<: *projects
   protocol-monorepo:
     config:
       removeUnconfiguredLabels: false
@@ -184,7 +226,7 @@ repos:
       removeUnconfiguredLabels: false
     labels:
       <<: *common
-  fund-me-on-testnet:
+  super-spreader:
     config:
       removeUnconfiguredLabels: false
     labels:
@@ -239,3 +281,4 @@ repos:
       removeUnconfiguredLabels: false
     labels:
       <<: *common
+

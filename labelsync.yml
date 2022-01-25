@@ -20,7 +20,7 @@
 # https://medium.com/@kinghuang/docker-compose-anchors-aliases-extensions-a1e4105d70bd.
 
 # Labels
-labels: &common
+common_labels: &common
   "Type: Enhancement":
     color: 00cccc
     description: New feature or request
@@ -127,7 +127,7 @@ labels: &common
     description: Related to the user experience topic
     alias: ["ux"]
 
-labels: &projects
+project_labels: &projects
   "Project: USER-v1":
     color: F5F5F5
     description: User dashboard v1

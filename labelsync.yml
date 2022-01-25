@@ -174,7 +174,8 @@ repos:
     config:
       removeUnconfiguredLabels: false
     labels:
-      <<: *common *projects
+      <<: *common
+      <<: *projects
   protocol-monorepo:
     config:
       removeUnconfiguredLabels: false

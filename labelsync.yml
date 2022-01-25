@@ -155,9 +155,6 @@ labels: &projects
   "Project: SENTINEL":
     color: F5F5F5
     description: Superfluid sentinel software
-  "Project: SENTINEL":
-    color: F5F5F5
-    description: Superfluid sentinel software
   "Project: SOLVENCY":
     color: F5F5F5
     description: Superfluid solvency suite

@@ -226,7 +226,7 @@ repos:
       removeUnconfiguredLabels: false
     labels:
       <<: *common
-  fund-me-on-testnet:
+  super-spreader:
     config:
       removeUnconfiguredLabels: false
     labels:
@@ -281,8 +281,4 @@ repos:
       removeUnconfiguredLabels: false
     labels:
       <<: *common
-  fund-me-on-testnet:
-    config:
-      removeUnconfiguredLabels: false
-    labels:
-      <<: *common
+

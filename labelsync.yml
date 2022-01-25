@@ -137,6 +137,9 @@ project_labels: &projects
   "Project: PLATFORM":
     color: F5F5F5
     description: Superfluid platform service, providing web2 experience to the users
+  "Project: CONSOLE":
+    color: F5F5F5
+    description: Superfluid console, a powerful explorer for Superfluid protocol data
   "Project: PROTOCOL":
     color: F5F5F5
     description: Superfluid protocol, including Ethereum contracts (in Solidity) and POCs in other chain types

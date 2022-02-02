@@ -123,10 +123,6 @@ common_labels: &common
     color: 008672
     description: Whelp! extra attention is needed here
     alias: ["help wanted"]
-  "Tag: SOS":
-    color: 008672
-    description: Whelp, extra attention is needed here
-    alias: ["idea stage", "question"]
   "Tag: Quality":
     color: d4c5f9
     description: Related to the quality topic

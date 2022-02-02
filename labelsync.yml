@@ -126,6 +126,10 @@ common_labels: &common
     color: 97efd0
     description: Related to the user experience topic
     alias: ["ux"]
+  "Tag: Blocked":
+    color: #BB0000
+    description: Related to the user experience topic
+    alias: ["ux"]
 
 project_labels: &projects
   "Project: USER-v1":

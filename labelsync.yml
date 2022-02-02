@@ -127,8 +127,8 @@ common_labels: &common
     description: Related to the user experience topic
     alias: ["ux"]
   "Tag: Blocked":
-    color: #BB0000
-    description: Related to the user experience topic
+    color: BB0000
+    description: The issue is blocked by other issues
     alias: ["ux"]
 
 project_labels: &projects

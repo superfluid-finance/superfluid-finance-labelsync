@@ -106,14 +106,27 @@ common_labels: &common
     color: d4af37
     description: Things that has a bounty on them
     alias: ["bounty"]
+  "Tag: Good First Issue":
+    color: 7057ff
+    description: Good for newcomers
+    siblings: ["Type: Documentation"]
+    alias: ["good first issue"]
   "Tag: Hotfix":
     color: ff6666
     description: The solution should be included in a hotfix
     alias: ["hotfix"]
   "Tag: Idea":
-    color: ff07ff
-    description: Raw idea, thoughts and brainstorming notes
-    alias: ["idea stage"]
+    color: d876e3
+    description: Raw idea, questions, thoughts and brainstorming notes
+    alias: ["idea stage", "question"]
+  "Tag: Help Me":
+    color: 008672
+    description: Whelp! extra attention is needed here
+    alias: ["help wanted"]
+  "Tag: SOS":
+    color: 008672
+    description: Whelp, extra attention is needed here
+    alias: ["idea stage", "question"]
   "Tag: Quality":
     color: d4c5f9
     description: Related to the quality topic

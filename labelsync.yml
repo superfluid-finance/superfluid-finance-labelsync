@@ -129,7 +129,6 @@ common_labels: &common
   "Tag: Blocked":
     color: BB0000
     description: The issue is blocked by other issues
-    alias: ["ux"]
 
 project_labels: &projects
   "Project: USER-v1":

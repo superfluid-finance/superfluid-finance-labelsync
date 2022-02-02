@@ -118,7 +118,7 @@ common_labels: &common
   "Tag: Idea":
     color: d876e3
     description: Raw idea, questions, thoughts and brainstorming notes
-    alias: ["idea stage", "question"]
+    alias: ["question", "idea stage"]
   "Tag: Help Me":
     color: 008672
     description: Whelp! extra attention is needed here

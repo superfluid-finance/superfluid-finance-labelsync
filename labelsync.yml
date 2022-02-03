@@ -199,6 +199,7 @@ repos:
       removeUnconfiguredLabels: false
     labels:
       <<: *common
+      <<: *projects
   platform:
     config:
       removeUnconfiguredLabels: false

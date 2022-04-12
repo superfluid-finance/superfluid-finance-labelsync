@@ -152,9 +152,13 @@ project_labels: &projects
   "Project: CONSOLE":
     color: F5F5F5
     description: Superfluid console, a powerful explorer for Superfluid protocol data
-  "Project: PROTOCOL":
+  "Project: PROTOCOL-EVMv1":
     color: F5F5F5
-    description: Superfluid protocol, including Ethereum contracts (in Solidity) and POCs in other chain types
+    description: Superfluid protocol EVM v1 implementation in Solidity
+    alias: ["Project: PROTOCOL"]
+  "Project: PROTOCOL-SPEC":
+    color: F5F5F5
+    description: Superfluid protocol specification in haskell
   "Project: JS-SDK":
     color: F5F5F5
     description: Superfluid protocol simple javascript SDK

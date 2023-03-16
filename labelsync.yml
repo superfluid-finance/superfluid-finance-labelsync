@@ -138,6 +138,12 @@ common_labels: &common
   "Tag: Blocked":
     color: BB0000
     description: The issue is blocked by other issues
+  "Team: Protocol":
+    color: 5319E7
+    description: Domains of Protocol Core, Sentinel, Peripherals, Protocol Infrastructure Tools & DevOps
+  "Team: Products":
+    color: 5319E7
+    description: Domains of User Products, User Platform Services, Automation System, Developer Products, Integrations & Websites
 
 project_labels: &projects
   "Project: USER-v1":
@@ -304,4 +310,3 @@ repos:
       removeUnconfiguredLabels: false
     labels:
       <<: *common
-
